@@ -47,7 +47,7 @@
     "definitions": {
       "pos": {
         "$id": "#pos",
-        "description": "Absolute position of joint in space.",
+        "description": "Absolute position in Cartesian space.",
         "type": "object",
         "properties": {
           "x": {"type": "array","items": {"type": ["number","null"]}},
@@ -59,7 +59,7 @@
       },
       "rot": {
         "$id": "#rot",
-        "description": "Rotation vector.",
+        "description": "Cartesian heading vector.",
         "type": "object",
         "properties": {
           "rx": {"type": "array","items": {"type": ["number","null"],"minimum": -1,"maximum": 1}},
