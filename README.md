@@ -1,4 +1,4 @@
-# DREAM dataset
+# DREAM Dataset
 
 ![DREAM Logo](images/dream.png)
 
@@ -15,7 +15,11 @@ The following primary features are included:
 * Head orientation
 * Eye gaze 
 
-All these features are specified in a common Cartesian frame of reference. 
+An example of the therapy environment is presented below. In the RET condition, a [SoftBank Nao](https://www.softbankrobotics.com/emea/en/nao) is used as a stimulus for the child. A therapist is always sitting next to the child, supporting interaction during therapy.
+
+![Therapy environment](images/RET.jpg)
+
+All dataset features are specified in a common Cartesian frame of reference.
 
 Additionally, the some metadata is included:
 
@@ -53,6 +57,10 @@ All data in this dataset is stored in [JavaScript Object Notation (JSON)](https:
     "task": "TT"
 }
 ```
+
+As an example, here is a visualisation of the data using Three.js:
+
+![Visualisation](images/0000584.png)
 
 This format is specified in detail as a JSON Schema, provided as part of this dataset: [dream.1.0.json](/specification/dream.1.0.json).
 
