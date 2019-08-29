@@ -70,7 +70,8 @@ An academic journal publication that will be the primary reference to this work 
 
 _DREAM (2019) Open DREAM Dataset. [github.com/dream2020/data](https://github.com/dream2020/data). Development of Robot-Enhanced Therapy for Children with Autism Spectrum Disorders. EU-FP7 grant 611391._
 
-Please not that attribution is required by the licence, as stated below.
+Please note that attribution is required by the licence, as stated below.
+
 ## License
 
 ![Creative Commons Licence](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
