@@ -58,11 +58,13 @@ All data in this dataset is stored in [JavaScript Object Notation (JSON)](https:
 }
 ```
 
-As an example, here is a visualisation of the data using Three.js:
+This format is specified in detail as a JSON Schema, provided as part of this dataset: [dream.1.0.json](/specification/dream.1.0.json).
+
+As an example, here is a visualisation of the data:
 
 ![Visualisation](images/0000584.png)
 
-This format is specified in detail as a JSON Schema, provided as part of this dataset: [dream.1.0.json](/specification/dream.1.0.json).
+The visualiser is available at https://github.com/dream2020/DREAM-data-visualizer. 
 
 ## Attribution
 
