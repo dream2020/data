@@ -87,3 +87,7 @@ _the licensor cannot revoke these freedoms as long as you follow the license ter
 ### Notices
 * You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
 * No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+
+## Acknowledgment
+
+This work is part of the [DREAM project](http://www.dream2020.eu) funded by the European Commission’s Seventh Framework Program (FP7), grant #611391.
