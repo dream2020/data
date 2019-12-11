@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://dream2020.eu/data/specification/dream.1.1.json",
+    "title": "DREAM dataset format specification",
+    "description": "This is a JSON schema for the DREAM dataset, an outcome of a European research project DREAM: Development of Robot-Enhanced therapy for children with AutisM spectrum disorders. More info at https://github.com/dream2020/data.",
+    "type": "object",
+    "properties": {
+      "date": {"type":"string","format":"date-time"},
+      "ados": {
+        "type": "object", 
+        "properties": {
+          "preTest": {"$ref": "#/definitions/ados"},
+          "postTest": {"$ref": "#/definitions/ados"}
+        }
+      },
+      "condition": {"type": ["string","null"]},
+      "task": {"type": "string"},
+      "participant": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "integer"},
+          "gender": {"type": ["string","null"],"pattern": "^(male|female)$"},
+          "ageInMonths": {"type": ["number","null"],"minimum": 0}
+        },
+        "required": ["id"]
+      },
+      "frame_rate": {"type": "number"},
+      "eye_gaze": {"$ref": "#/definitions/rot"},
+      "head_gaze": {"$ref": "#/definitions/rot"},
+      "skeleton": {
+        "type": "object",
+        "properties": {
+          "elbow_left": {"$ref": "#/definitions/pos"},
+          "elbow_right": {"$ref": "#/definitions/pos"},
+          "hand_left": {"$ref": "#/definitions/pos"},
+          "hand_right": {"$ref": "#/definitions/pos"},
+          "head": {"$ref": "#/definitions/pos"},
+          "sholder_center": {"$ref": "#/definitions/pos"},
+          "sholder_left": {"$ref": "#/definitions/pos"},
+          "sholder_right": {"$ref": "#/definitions/pos"},
+          "wrist_left": {"$ref": "#/definitions/pos"},
+          "wrist_right": {"$ref": "#/definitions/pos"}
+        },
+        "required": [
+          "elbow_left","elbow_right","hand_left","hand_right","head","sholder_center","sholder_left","sholder_right","wrist_left","wrist_right"
+        ]
+      }
+    },
+    "required": ["eye_gaze","head_gaze","skeleton","participant","condition","task","frame_rate"],
+    "definitions": {
+      "pos": {
+        "$id": "#pos",
+        "description": "Absolute position in Cartesian space.",
+        "type": "object",
+        "properties": {
+          "x": {"type": "array","items": {"type": ["number","null"]}},
+          "y": {"type": "array","items": {"type": ["number","null"]}},
+          "z": {"type": "array","items": {"type": ["number","null"]}},
+          "confidence": {"type": "array","items": {"type": ["number","null"]}}
+        },
+        "required": ["x","y","z","confidence"]
+      },
+      "rot": {
+        "$id": "#rot",
+        "description": "Cartesian heading vector.",
+        "type": "object",
+        "properties": {
+          "rx": {"type": "array","items": {"type": ["number","null"],"minimum": -1,"maximum": 1}},
+          "ry": {"type": "array","items": {"type": ["number","null"],"minimum": -1,"maximum": 1}},
+          "rz": {"type": "array","items": {"type": ["number","null"],"minimum": -1,"maximum": 1}}
+        },
+        "required": ["rx","ry","rz"]
+      },
+      "ados": {
+        "$id": "#ados",
+        "description": "ADOS evaluation scores",
+        "type": "object",
+        "properties": {
+          "protocol": {"type": "string"},
+          "communication": {"type": "number"},
+          "interaction": {"type": "number"},
+          "play": {"type": "number"},
+          "socialCommunicationQuestionnaire": {"type": "number"},
+          "stereotype": {"type": "number"},
+          "total": {"type": "number"},
+          "module": {"type": "number"}
+        },
+        "required": ["protocol","total","module"]
+      }
+    }
+  }
