@@ -6,6 +6,12 @@ Within the European research project [DREAM: Development of Robot-Enhanced thera
 
 This public release of the dataset does not include any fotage of children. Instead, processed features of the recorded data is provided. This data is produced using an integrated sensor system developed within DREAM. Please refer to [github.com/dream2020/sensors](https://github.com/dream2020/sensors) for more information.  
 
+If you use this dataset in your own work, we kindly ask you for attribution to: 
+
+Erik A. Billing (2019) _The Open Dream Dataset_. https://github.com/dream2020/data. DOI: 10.5281/zenodo.3571008.
+
+[![DOI](https://zenodo.org/badge/179277477.svg)](https://zenodo.org/badge/latestdoi/179277477)
+
 _This is a pre-release of the complete dataset, comprising a single sample session file only. 
 The complete dataset will be released along with an academic journal publication wich is currently under preparation. For more information, please contact [Erik Billing, University of Skövde](http://www.his.se/erikb/)._
 
