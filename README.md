@@ -85,7 +85,7 @@ The visualiser is available at https://github.com/dream2020/DREAM-data-visualize
 
 An academic journal publication that will be the primary reference to this work is currently under preparation. In the meantime, please refer to this work in the following way: 
 
-_Erik A. Billing (2019) Open DREAM Dataset. [github.com/dream2020/data](https://github.com/dream2020/data). Development of Robot-Enhanced Therapy for Children with Autism Spectrum Disorders. EU-FP7 grant 611391. DOI: 10.5281/zenodo.3571008._
+_Erik A. Billing (2019) Open DREAM Dataset. DREAM: Development of Robot-Enhanced Therapy for Children with Autism Spectrum Disorders. EU-FP7 grant 611391. https://github.com/dream2020/data. https://doi.org/10.5281/zenodo.3571008._
 
 [![DOI](https://zenodo.org/badge/179277477.svg)](https://zenodo.org/badge/latestdoi/179277477)
 
