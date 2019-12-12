@@ -2,7 +2,7 @@
 
 ![DREAM Logo](images/dream.png)
 
-Within the European research project [DREAM: Development of Robot-Enhanced therapy for children with AutisM spectrum disorders](http://www.dream2020.eu), a large evaluation of _Robot Assisted Therapy (RAT)_ has been conducted, compared to _Standard Human Treatment (SHT)_. Both conditions follows a _Applied Behavior Analysis (ABA)_ protocol. 76 children diagnosed with _Autism Spectrum Disorders (ASD)_ participated, going through a total of almost 4000 therapy sessions and more than 360 hours of therapy. Each session was recorded with three RGB cameras and two RGBD (Kinect) cameras, providing detailed information of children's behavior during therapy. 
+Within the European research project [DREAM: Development of Robot-Enhanced therapy for children with AutisM spectrum disorders](https://dream2020.github.io/DREAM/), a large evaluation of _Robot Assisted Therapy (RAT)_ has been conducted, compared to _Standard Human Treatment (SHT)_. Both conditions follows a _Applied Behavior Analysis (ABA)_ protocol. 76 children diagnosed with _Autism Spectrum Disorders (ASD)_ participated, going through a total of almost 4000 therapy sessions and more than 360 hours of therapy. Each session was recorded with three RGB cameras and two RGBD (Kinect) cameras, providing detailed information of children's behavior during therapy. 
 
 This public release of the dataset does not include any fotage of children. Instead, processed features of the recorded data is provided. This data is produced using an integrated sensor system developed within DREAM. Please refer to [github.com/dream2020/sensors](https://github.com/dream2020/sensors) for more information.  
 
@@ -78,13 +78,13 @@ Please note that attribution is required by the licence, as stated below.
 
 ![Creative Commons Licence](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/). This licence permits
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). This licence permits
 _copying and redistribution of the material in any medium or format_ and states that 
 _the licensor cannot revoke these freedoms as long as you follow the license terms._ This freedom is given under the following terms:
 
 * __Attribution__ - You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 * __NonCommercial__ - You may not use the material for commercial purposes.
-* __NoDerivatives__ - If you remix, transform, or build upon the material, you may not distribute the modified material.
+* __ShareAlike__ - If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 * __No additional restrictions__ - You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 ### Notices
@@ -93,4 +93,4 @@ _the licensor cannot revoke these freedoms as long as you follow the license ter
 
 ## Acknowledgment
 
-This work is part of the [DREAM project](http://www.dream2020.eu) funded by the European Commission’s Seventh Framework Program (FP7), grant #611391.
+This work is part of the [DREAM project](https://dream2020.github.io/DREAM/) funded by the European Commission’s Seventh Framework Program (FP7), grant #611391.
