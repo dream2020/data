@@ -8,10 +8,6 @@ This public release of the dataset does not include any fotage of children. Inst
 
 If you use this dataset in your own work, we kindly ask you for attribution to: 
 
-Erik A. Billing (2019) _The Open Dream Dataset_. https://github.com/dream2020/data. DOI: 10.5281/zenodo.3571008.
-
-[![DOI](https://zenodo.org/badge/179277477.svg)](https://zenodo.org/badge/latestdoi/179277477)
-
 _This is a pre-release of the complete dataset, comprising a single sample session file only. 
 The complete dataset will be released along with an academic journal publication wich is currently under preparation. For more information, please contact [Erik Billing, University of Skövde](http://www.his.se/erikb/)._
 
@@ -89,7 +85,9 @@ The visualiser is available at https://github.com/dream2020/DREAM-data-visualize
 
 An academic journal publication that will be the primary reference to this work is currently under preparation. In the meantime, please refer to this work in the following way: 
 
-_DREAM (2019) Open DREAM Dataset. [github.com/dream2020/data](https://github.com/dream2020/data). Development of Robot-Enhanced Therapy for Children with Autism Spectrum Disorders. EU-FP7 grant 611391._
+_Erik A. Billing (2019) Open DREAM Dataset. [github.com/dream2020/data](https://github.com/dream2020/data). Development of Robot-Enhanced Therapy for Children with Autism Spectrum Disorders. EU-FP7 grant 611391. DOI: 10.5281/zenodo.3571008._
+
+[![DOI](https://zenodo.org/badge/179277477.svg)](https://zenodo.org/badge/latestdoi/179277477)
 
 Please note that attribution is required by the licence, as stated below.
 
