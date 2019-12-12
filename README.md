@@ -35,13 +35,26 @@ All data in this dataset is stored in [JavaScript Object Notation (JSON)](https:
 
 ```json
 {
-    "ados": {"initial": 13},
+    "$id": "User 37_18_Intervention 2_20171102_123242.369000.json",
+    "$schema": "https://raw.githubusercontent.com/dream2020/data/master/specification/dream.1.1.json",
+    "ados": {
+        "preTest": {
+            "communication": 2,
+            "interaction": 5,
+            "module": 1.0,
+            "play": 1,
+            "protocol": "ADOS-G",
+            "socialCommunicationQuestionnaire": 23,
+            "stereotype": 0,
+            "total": 7
+        }
+    },
     "condition": "RET",
-    "date": "2017-11-16T12:51:49.373000",
+    "date": "2017-11-02T12:32:42.369000",
     "eye_gaze": {"rx": [],"ry": [],"rz": []},
-    "frame_rate": 25.16,
+    "frame_rate": 25.1,
     "head_gaze": {"rx": [],"ry": [],"rz": []},
-    "participant": {"gender": "male","id": 37},
+    "participant": {"ageInMonths": 47,"gender": "male","id": 37},
     "skeleton": {
         "elbow_left": {"confidence": [],"x": [],"y": [],"z": []},
         "elbow_right": {"confidence": [],"x": [],"y": [],"z": []},
