@@ -2,7 +2,7 @@
 
 ![DREAM Logo](images/dream.png)
 
-Within the European research project [DREAM: Development of Robot-Enhanced therapy for children with AutisM spectrum disorders](https://dream2020.github.io/DREAM/), a large evaluation of _Robot Assisted Therapy (RAT)_ has been conducted, compared to _Standard Human Treatment (SHT)_. Both conditions follows a _Applied Behavior Analysis (ABA)_ protocol. 76 children diagnosed with _Autism Spectrum Disorders (ASD)_ participated, going through a total of almost 4000 therapy sessions and more than 360 hours of therapy. Each session was recorded with three RGB cameras and two RGBD (Kinect) cameras, providing detailed information of children's behavior during therapy. 
+Within the European research project [DREAM: Development of Robot-Enhanced therapy for children with AutisM spectrum disorders](https://dream2020.github.io/DREAM/), a large evaluation of _Robot Assisted Therapy (RAT)_ has been conducted, compared to _Standard Human Treatment (SHT)_. Both conditions follows a _Applied Behaviour Analysis (ABA)_ protocol. 76 children diagnosed with _Autism Spectrum Disorders (ASD)_ participated, going through a total of almost 4000 therapy sessions and more than 360 hours of therapy. Each session was recorded with three RGB cameras and two RGBD (Kinect) cameras, providing detailed information of children's behaviour during therapy. 
 
 This public release of the dataset does not include any fotage of children. Instead, processed features of the recorded data is provided. This data is produced using an integrated sensor system developed within DREAM. Please refer to [github.com/dream2020/sensors](https://github.com/dream2020/sensors) for more information.  
 
@@ -13,7 +13,7 @@ The complete dataset will be released along with an academic journal publication
 
 The following primary features are included: 
 
-* 10 joint 3D skeleton covering upper body, including head, sholders, elbows, wrists, and hands,
+* 10 joint 3D skeleton covering upper body, including head, shoulders, elbows, wrists, and hands,
 * Head orientation
 * Eye gaze 
 
@@ -33,7 +33,9 @@ Additionally, the some metadata is included:
 * Therapy condition (RET or SHT),
 * Date of therapy
 
-All data in this dataset is stored in [JavaScript Object Notation (JSON)](https://www.json.org) format. The structure of the JSON dataset file is presented below, excluding numeric data here appearing as empty arrays _"[]"_.
+## Specification and usage
+
+All data in this dataset is stored in [JavaScript Object Notation (JSON)](https://www.json.org) format. The structure of the JSON dataset file is presented below, excluding numeric data here appearing as empty arrays _"[]"_. JSON data can be opened using standard libraries in most programming languages. Please refer to the [documentation](docs/DREAM-data.ipynb) for basic instructions on how to load and plot the data using [Python](https://www.python.org/) and [Jupyter](https://jupyter.org/).
 
 ```json
 {
@@ -75,11 +77,11 @@ All data in this dataset is stored in [JavaScript Object Notation (JSON)](https:
 
 This format is specified in detail as a JSON Schema, provided as part of this dataset: [dream.1.0.json](/specification/dream.1.0.json).
 
-As an example, here is a visualisation of the data:
+## Visualisation
+
+The DREAM Dataset can be visualised using the [DREAM Data Visualizer](https://github.com/dream2020/DREAM-data-visualizer). A snapshot from the [example data](dataset/data_example.json) is presented below.
 
 ![Visualisation](images/0000584.png)
-
-The visualiser is available at https://github.com/dream2020/DREAM-data-visualizer. 
 
 ## Attribution
 
