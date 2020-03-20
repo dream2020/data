@@ -75,7 +75,7 @@ All data in this dataset is stored in [JavaScript Object Notation (JSON)](https:
 }
 ```
 
-This format is specified in detail as a JSON Schema, provided as part of this dataset: [dream.1.0.json](/specification/dream.1.0.json).
+This format is specified in detail as a JSON Schema, provided as part of this dataset: [dream.1.0.json](/specification/dream.1.1.json).
 
 ## Visualisation
 
