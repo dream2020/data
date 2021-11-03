@@ -5,6 +5,7 @@ This module implement util classes for reading and visalizing the DREAM dataset 
 import json
 import io
 import numpy as np
+import pandas as pd
 from math import sin,cos
 from functools import reduce
 
@@ -75,3 +76,32 @@ class Intervention(dict):
     def xrot(self,gaze):
         v = gaze[0]
         return np.array([[0,0,1],[-sin(v),cos(v),0],[cos(v),sin(v),0]])
+    
+    def to_csv(self,*args,**kwargs):
+        return self.to_dataFrame().to_csv(*args,**kwargs)
+    
+    def to_dataFrame(self):
+        return pd.DataFrame.from_dict(dict(self.columns()))
+    
+    def columns(self,d=None,parent_name='',trim=True):
+        if d is None: d=self
+        if trim == True: d.trim()
+        for k, v in d.items():
+            if '$' in k: continue
+            if isinstance(v,dict):
+                for c, cc in self.columns(v,parent_name + '_' + k if parent_name else k,False):
+                    yield c, cc
+            else:
+                yield parent_name + '_' + k if parent_name else k, v
+                
+    def trim(self):
+        """Guarantees that all time dependent data has the same length, extending arrays where necessary."""
+        length = 0
+        cols = list(self.columns(trim=False))
+        for c, v in cols:
+            if isinstance(v,list): length = max(length,len(v))
+        for c, v in cols:
+            while isinstance(v,list) and len(v) > 1 and len(v) < length:
+                v.append(float('nan'))
+            
+                
